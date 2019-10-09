@@ -6,6 +6,10 @@ import (
 	"os"
 )
 
+/**
+功能与dup1相同,但是这里加入了一个读取文件中数据的办法
+可以通过参数指定文件名字,进而打开文件内容.
+*/
 func main() {
 	counts := make(map[string]int)
 	files := os.Args[1:]

@@ -1,5 +1,8 @@
 package main
 
+/**
+与echo1功能相同,但是使用了for-each迭代
+*/
 import (
 	"fmt"
 	"os"

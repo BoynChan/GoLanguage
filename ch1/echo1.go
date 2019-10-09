@@ -1,5 +1,8 @@
 package main
 
+/**
+将用户运行go程序时的命令参数打印到控制台
+*/
 import (
 	"fmt"
 	"os"
