@@ -1,7 +1,7 @@
 package main
 
 import (
-	"boyn.top/ch2/tempconv"
+	tempconv2 "main/boyn.top/ch2/tempconv"
 	"os"
 	"strconv"
 )
@@ -19,9 +19,9 @@ func main() {
 			fmt.Fprintf(os.Stderr, "cf: %v\n", err)
 			os.Exit(1)
 		}
-		f := tempconv.Fahrenheit(t)
-		c := tempconv.Celsius(t)
+		f := tempconv2.Fahrenheit(t)
+		c := tempconv2.Celsius(t)
 		fmt.Printf("%s = %s, %s = %s\n",
-			f, tempconv.FToC(f), c, tempconv.CToF(c))
+			f, tempconv2.FToC(f), c, tempconv2.CToF(c))
 	}
 }

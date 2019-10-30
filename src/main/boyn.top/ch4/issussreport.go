@@ -1,8 +1,8 @@
 package main
 
 import (
-	github "boyn.top/ch4/json_github"
 	"log"
+	github2 "main/boyn.top/ch4/json_github"
 	"os"
 	"text/template"
 	"time"
@@ -29,7 +29,7 @@ var report = template.Must(template.New("issuelist").
 	Parse(templ))
 
 func main() {
-	result, err := github.SearchIssues(os.Args[1:])
+	result, err := github2.SearchIssues(os.Args[1:])
 	if err != nil {
 		log.Fatal(err)
 	}

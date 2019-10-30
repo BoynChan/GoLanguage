@@ -1,9 +1,9 @@
 package main
 
 import (
-	"boyn.top/ch4/json_github"
 	"fmt"
 	"log"
+	"main/boyn.top/ch4/json_github"
 	"os"
 )
 
