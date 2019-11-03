@@ -7,7 +7,7 @@ import "fmt"
 //是一个隐式的变量,可以被函数引用但是外界无法引用
 func counter(init int) func() int {
 	counter := init
-	return func() int{
+	return func() int {
 		counter++
 		return counter
 	}
@@ -21,17 +21,17 @@ func counter(init int) func() int {
 //我们知道斐波那契数列的每一个元素是前两个元素之和,所以我们把前两个元素加起来,并更新这两个元素
 //达到高效计算斐波那契数列的效果
 func fibonacci() func() int {
-	front := 0;
-	last := 1;
-	n := 0;
+	front := 0
+	last := 1
+	n := 0
 	return func() int {
 		if n == 0 {
 			n++
 			return 0
-		}else if n == 1{
+		} else if n == 1 {
 			n++
 			return 1
-		}else {
+		} else {
 			temp := last
 			last = front + last
 			front = temp
@@ -46,4 +46,3 @@ func main() {
 	fmt.Println(incr())
 	fmt.Println(incr())
 }
-
